@@ -1,0 +1,182 @@
+
+
+{% extends 'template-1.html' %}
+
+
+{% block pageTitle %}
+  Healthcare for the armed forces community
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': '',
+        'label' : 'Live Well'
+      },
+      {
+        'url': '',
+        'label' : 'Mental health'
+      },
+      {
+        'url': '',
+        'label' : 'Care and support'
+      },
+      {
+        'url': '',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': '../nhs-services',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      
+      <li class="nhsuk-breadcrumb__item">
+          <a href="../../nhsuk" class="nhsuk-breadcrumb__link">Home</a>
+        </li>
+        
+      <li class="nhsuk-breadcrumb__item">
+          <a href="../nhs-services" class="nhsuk-breadcrumb__link">NHS services</a>
+        </li>
+        
+      </ol>
+
+      <p class="nhsuk-breadcrumb__back">
+        
+          <a href="../nhs-services" class="nhsuk-breadcrumb__backlink">
+            <span class="nhsuk-u-visually-hidden">Back to </span>
+            NHS services
+          </a>
+        
+      </p>
+    </div>
+  </nav>
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<div class="nhsuk-width-container">
+  <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0 nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
+  
+<div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-full">
+
+<div class="nhsuk-u-reading-width">
+
+
+<h1>
+
+Healthcare for the armed forces community
+
+</h1>
+<p class="nhsuk-lede-text">
+How the NHS can help if you're in the British armed forces or are a veteran, a reservist or a family member of someone who is serving or who has served.
+</p>
+
+
+</div>
+
+<article>
+
+
+
+
+
+
+
+
+
+
+
+<section class="nhsuk-u-reading-width">
+  <ul class="nhsuk-hub-key-links beta-hub-key-links">
+    
+      <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+        <a href="https://www.nhs.uk/nhs-services/armed-forces-community/mental-health/">
+          Mental health support
+        </a>
+      </li>
+    
+      <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+        <a href="https://www.nhs.uk/nhs-services/armed-forces-community/veterans-service-leavers-non-mobilised-reservists/">
+          Veterans, service leavers, and non-mobilised reservists
+        </a>
+      </li>
+    
+      <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+        <a href="https://www.nhs.uk/nhs-services/armed-forces-community/families-support-information/">
+          Information and support for families
+        </a>
+      </li>
+    
+      <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+        <a href="https://www.nhs.uk/nhs-services/armed-forces-community/nhs-services-guide/">
+          A guide to NHS services
+        </a>
+      </li>
+    
+      <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+        <a href="https://www.nhs.uk/nhs-services/armed-forces-community/charities-support/">
+          Charities and support groups
+        </a>
+      </li>
+    
+      <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+        <a href="https://www.nhs.uk/nhs-services/armed-forces-community/service-leavers-guide/">
+          Step-by-step guide for service leavers
+        </a>
+      </li>
+    
+      <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+        <a href="https://www.nhs.uk/nhs-services/armed-forces-community/access-healthcare-in-active-service/">
+          Accessing NHS healthcare while in active service
+        </a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+<div class="nhsuk-u-reading-width nhsuk-u-margin-top-6 nhsuk-hub-after-key-links">
+
+</div>
+
+
+
+
+
+</article>
+
+</div>
+</div>
+
+  
+</main>
+</div>
+
+    {% endblock %}
+

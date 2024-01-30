@@ -1,0 +1,168 @@
+
+{% extends 'template-1.html' %}
+
+
+{% block pageTitle %}
+  Prescriptions
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': '',
+        'label' : 'Live Well'
+      },
+      {
+        'url': '',
+        'label' : 'Mental health'
+      },
+      {
+        'url': '',
+        'label' : 'Care and support'
+      },
+      {
+        'url': '',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': '../nhs-services',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      
+      <li class="nhsuk-breadcrumb__item">
+          <a href="../../nhsuk" class="nhsuk-breadcrumb__link">Home</a>
+        </li>
+        
+      <li class="nhsuk-breadcrumb__item">
+          <a href="../nhs-services" class="nhsuk-breadcrumb__link">NHS services</a>
+        </li>
+        
+      </ol>
+
+      <p class="nhsuk-breadcrumb__back">
+        
+          <a href="../nhs-services" class="nhsuk-breadcrumb__backlink">
+            <span class="nhsuk-u-visually-hidden">Back to </span>
+            NHS services
+          </a>
+        
+      </p>
+    </div>
+  </nav>
+{% endblock %}
+
+
+
+
+{% block content %}
+<div class="nhsuk-width-container">
+  <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0 nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
+  
+<div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-full">
+
+<div class="nhsuk-u-reading-width">
+
+
+<h1>
+
+Prescriptions
+
+</h1>
+<p class="nhsuk-lede-text">
+Find out about prescriptions including charges, repeat prescriptions and if you can get free prescriptions.
+</p>
+
+
+</div>
+
+<article>
+
+
+
+
+
+
+
+
+
+
+
+<section class="nhsuk-u-reading-width">
+  <ul class="nhsuk-hub-key-links beta-hub-key-links">
+    
+      <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+        <a href="https://www.nhs.uk/nhs-services/prescriptions/check-if-you-can-get-free-prescriptions/">
+          Check if you can get free prescriptions
+        </a>
+      </li>
+    
+      <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+        <a href="https://www.nhs.uk/nhs-services/prescriptions/nhs-prescription-charges/">
+          NHS prescription charges
+        </a>
+      </li>
+    
+      <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+        <a href="https://www.nhs.uk/nhs-services/prescriptions/save-money-with-a-prescription-prepayment-certificate-ppc/">
+          Save money with a prescription prepayment certificate (PPC)
+        </a>
+      </li>
+    
+      <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+        <a href="https://www.nhs.uk/nhs-services/prescriptions/emergency-prescriptions/">
+          Emergency prescriptions
+        </a>
+      </li>
+    
+      <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+        <a href="https://www.nhs.uk/nhs-services/prescriptions/how-to-order-a-repeat-prescription/">
+          How to order a repeat prescription
+        </a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+<div class="nhsuk-u-reading-width nhsuk-u-margin-top-6 nhsuk-hub-after-key-links">
+
+</div>
+
+
+
+
+
+</article>
+
+</div>
+</div>
+
+  
+</main>
+</div>
+
+    {% endblock %}
+

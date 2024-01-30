@@ -1,0 +1,180 @@
+
+
+{% extends 'template-1.html' %}
+
+
+{% block pageTitle %}
+  Online services
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': '',
+        'label' : 'Live Well'
+      },
+      {
+        'url': '',
+        'label' : 'Mental health'
+      },
+      {
+        'url': '',
+        'label' : 'Care and support'
+      },
+      {
+        'url': '',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': '../nhs-services',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      
+      <li class="nhsuk-breadcrumb__item">
+          <a href="../../nhsuk" class="nhsuk-breadcrumb__link">Home</a>
+        </li>
+        
+      <li class="nhsuk-breadcrumb__item">
+          <a href="../nhs-services" class="nhsuk-breadcrumb__link">NHS services</a>
+        </li>
+        
+      </ol>
+
+      <p class="nhsuk-breadcrumb__back">
+        
+          <a href="../nhs-services" class="nhsuk-breadcrumb__backlink">
+            <span class="nhsuk-u-visually-hidden">Back to </span>
+            NHS services
+          </a>
+        
+      </p>
+    </div>
+  </nav>
+{% endblock %}
+
+
+
+
+{% block content %}
+<div class="nhsuk-width-container">
+  <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0 nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
+  
+<div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-full">
+
+<div class="nhsuk-u-reading-width">
+
+
+<h1>
+
+Online services
+
+</h1>
+<p class="nhsuk-lede-text">
+Get your NHS number and find out how to order repeat prescriptions using an app or website.
+</p>
+
+
+</div>
+
+<article>
+
+
+
+
+
+
+
+
+
+
+
+<section class="nhsuk-u-reading-width">
+  <ul class="nhsuk-hub-key-links beta-hub-key-links">
+    
+      <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+        <a href="https://www.nhs.uk/nhs-services/online-services/nhs-login/">
+          About NHS login
+        </a>
+      </li>
+    
+      <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+        <a href="https://www.nhs.uk/nhs-services/online-services/find-nhs-number/">
+          Find your NHS number service
+        </a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+<div class="nhsuk-u-reading-width nhsuk-u-margin-top-6 nhsuk-hub-after-key-links">
+
+</div>
+
+
+
+<div class="nhsuk-u-margin-top-6  beta-hub-border-top ">
+<div class="beta-hub-related-links-title">
+<h2 class="nhsuk-heading-s ">Online tools to manage your health and wellbeing</h2>
+</div>
+<ul class="beta-hub-related-links">
+
+<li class="beta-hub-related-links__list-item">
+  <a href="https://www.nhs.uk/nhs-app/">
+    NHS App: access a range of NHS services and get your NHS COVID Pass
+  </a>
+  
+</li>
+
+<li class="beta-hub-related-links__list-item">
+  <a href="http://covid19.nhs.uk">
+    NHS COVID-19 app
+  </a>
+  
+    <div>covid19.nhs.uk</div>
+  
+</li>
+
+</ul>
+</div>
+
+
+
+
+
+
+</article>
+
+</div>
+</div>
+
+  
+</main>
+</div>
+
+
+    {% endblock %}
+

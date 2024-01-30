@@ -1,0 +1,175 @@
+
+{% extends 'template-1.html' %}
+
+
+{% block pageTitle %}
+  Help with health costs
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': '',
+        'label' : 'Live Well'
+      },
+      {
+        'url': '',
+        'label' : 'Mental health'
+      },
+      {
+        'url': '',
+        'label' : 'Care and support'
+      },
+      {
+        'url': '',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': '../nhs-services',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      
+      <li class="nhsuk-breadcrumb__item">
+          <a href="../../nhsuk" class="nhsuk-breadcrumb__link">Home</a>
+        </li>
+        
+      <li class="nhsuk-breadcrumb__item">
+          <a href="../nhs-services" class="nhsuk-breadcrumb__link">NHS services</a>
+        </li>
+        
+      </ol>
+
+      <p class="nhsuk-breadcrumb__back">
+        
+          <a href="../nhs-services" class="nhsuk-breadcrumb__backlink">
+            <span class="nhsuk-u-visually-hidden">Back to </span>
+            NHS services
+          </a>
+        
+      </p>
+    </div>
+  </nav>
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<div class="nhsuk-width-container">
+  <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0 nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
+  
+<div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-full">
+
+<div class="nhsuk-u-reading-width">
+
+
+<h1>
+
+Help with health costs
+
+</h1>
+<p class="nhsuk-lede-text">
+Find out about when you need to pay, help when on universal credit, travel costs and personal health budgets.
+</p>
+
+
+</div>
+
+<article>
+
+
+
+
+
+
+
+
+
+
+
+<section class="nhsuk-u-reading-width">
+  <ul class="nhsuk-hub-key-links beta-hub-key-links">
+    
+      <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+        <a href="https://www.nhs.uk/nhs-services/help-with-health-costs/when-you-need-to-pay-towards-nhs-care/">
+          When you need to pay towards NHS care
+        </a>
+      </li>
+    
+      <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+        <a href="https://www.nhs.uk/nhs-services/help-with-health-costs/nhs-low-income-scheme-lis/">
+          NHS Low Income Scheme (LIS)
+        </a>
+      </li>
+    
+      <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+        <a href="https://www.nhs.uk/nhs-services/help-with-health-costs/help-with-health-costs-for-people-getting-universal-credit/">
+          Help with health costs for people getting Universal Credit
+        </a>
+      </li>
+    
+      <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+        <a href="https://www.nhs.uk/nhs-services/help-with-health-costs/wigs-and-fabric-supports-on-the-nhs/">
+          Wigs and fabric supports on the NHS
+        </a>
+      </li>
+    
+      <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+        <a href="https://www.nhs.uk/nhs-services/help-with-health-costs/healthcare-travel-costs-scheme-htcs/">
+          Healthcare Travel Costs Scheme (HTCS)
+        </a>
+      </li>
+    
+      <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+        <a href="https://www.nhs.uk/nhs-services/help-with-health-costs/what-is-a-personal-health-budget/">
+          What is a personal health budget?
+        </a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+<div class="nhsuk-u-reading-width nhsuk-u-margin-top-6 nhsuk-hub-after-key-links">
+
+</div>
+
+
+
+
+
+</article>
+
+</div>
+</div>
+
+  
+</main>
+</div>
+
+    {% endblock %}
+

@@ -1,0 +1,225 @@
+
+{% extends 'template-1.html' %}
+
+
+{% block pageTitle %}
+  COVID-19 services
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': '',
+        'label' : 'Live Well'
+      },
+      {
+        'url': '',
+        'label' : 'Mental health'
+      },
+      {
+        'url': '',
+        'label' : 'Care and support'
+      },
+      {
+        'url': '',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': '../nhs-services',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      
+      <li class="nhsuk-breadcrumb__item">
+          <a href="../../nhsuk" class="nhsuk-breadcrumb__link">Home</a>
+        </li>
+        
+      <li class="nhsuk-breadcrumb__item">
+          <a href="../nhs-services" class="nhsuk-breadcrumb__link">NHS services</a>
+        </li>
+        
+      </ol>
+
+      <p class="nhsuk-breadcrumb__back">
+        
+          <a href="../nhs-services" class="nhsuk-breadcrumb__backlink">
+            <span class="nhsuk-u-visually-hidden">Back to </span>
+            NHS services
+          </a>
+        
+      </p>
+    </div>
+  </nav>
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<div class="nhsuk-width-container">
+  <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0 nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
+  
+<div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-full">
+
+<div class="nhsuk-u-reading-width">
+
+
+<h1>COVID-19 services</h1>
+<p class="nhsuk-lede-text">
+Get information about NHS COVID-19 services such as vaccination services, testing, research and 119.
+</p>
+
+
+</div>
+
+<article>
+
+
+
+
+
+
+
+
+
+<ul class="nhsuk-grid-row nhsuk-card-group">
+
+  <li class="nhsuk-grid-column-one-third nhsuk-card-group__item nhsuk-u-margin-bottom-4">
+    
+
+
+
+<div class="nhsuk-card nhsuk-card--clickable beta-card--plain">
+<div class="nhsuk-card__content beta-card__content">
+<h2 class="nhsuk-card__heading nhsuk-heading-m">
+<a class="nhsuk-card__link" href="https://www.nhs.uk/nhs-services/covid-19-services/testing-for-covid-19/">
+  COVID-19 testing
+</a>
+</h2>
+<div class="nhsuk-card__description"><p data-block-key="dtf62">Find out about testing for COVID-19, including who can get free tests, test results and how to report them</p></div>
+
+</div>
+</div>
+
+  </li>
+
+  <li class="nhsuk-grid-column-one-third nhsuk-card-group__item nhsuk-u-margin-bottom-4">
+    
+
+
+
+<div class="nhsuk-card nhsuk-card--clickable beta-card--plain">
+<div class="nhsuk-card__content beta-card__content">
+<h2 class="nhsuk-card__heading nhsuk-heading-m">
+<a class="nhsuk-card__link" href="https://www.nhs.uk/nhs-services/covid-19-services/covid-19-vaccination-services/">
+  COVID-19 vaccination services
+</a>
+</h2>
+<div class="nhsuk-card__description"><p data-block-key="dtf62">Find out about reporting vaccinations received abroad and choosing whether to be invited for future vaccination</p></div>
+
+</div>
+</div>
+
+  </li>
+
+  <li class="nhsuk-grid-column-one-third nhsuk-card-group__item nhsuk-u-margin-bottom-4">
+    
+
+
+
+<div class="nhsuk-card nhsuk-card--clickable beta-card--plain">
+<div class="nhsuk-card__content beta-card__content">
+<h2 class="nhsuk-card__heading nhsuk-heading-m">
+<a class="nhsuk-card__link" href="https://www.nhs.uk/nhs-services/covid-19-services/covid-19-vaccine-research/">
+  Take part in research
+</a>
+</h2>
+<div class="nhsuk-card__description"><p data-block-key="dtf62">Find out about health research studies and how you may be able to take part</p></div>
+
+</div>
+</div>
+
+  </li>
+
+  <li class="nhsuk-grid-column-one-third nhsuk-card-group__item nhsuk-u-margin-bottom-4">
+    
+
+
+
+<div class="nhsuk-card nhsuk-card--clickable beta-card--plain">
+<div class="nhsuk-card__content beta-card__content">
+<h2 class="nhsuk-card__heading nhsuk-heading-m">
+<a class="nhsuk-card__link" href="https://www.nhs.uk/nhs-services/covid-19-services/when-to-call-119/">
+  When to call 119
+</a>
+</h2>
+<div class="nhsuk-card__description"><p data-block-key="dtf62">Find out when you should call 119 and what help you can get with COVID-19 services</p></div>
+
+</div>
+</div>
+
+  </li>
+
+</ul>
+
+
+
+
+<div class="nhsuk-u-margin-top-6 ">
+<div class="beta-hub-related-links-title">
+<h2 class="nhsuk-heading-s ">More information about COVID-19</h2>
+</div>
+<ul class="beta-hub-related-links">
+
+<li class="beta-hub-related-links__list-item">
+  <a href="https://www.nhs.uk/conditions/covid-19/">
+    COVID-19
+  </a>
+  
+</li>
+
+</ul>
+</div>
+
+
+
+
+<div class="nhsuk-u-reading-width beta-hub-bottom-content">
+
+</div>
+
+
+
+</article>
+
+</div>
+</div>
+
+  
+</main>
+</div>
+
+    {% endblock %}
+
