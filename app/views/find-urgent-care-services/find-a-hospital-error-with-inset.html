@@ -1,0 +1,163 @@
+
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Find a hospital
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+      },
+      {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+      },
+      {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+      },
+      {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+
+{% block beforeContent %}
+  {{
+    breadcrumb({
+      items: [
+        {
+          href: "http://localhost:3000/",
+          text: "Home"
+        }
+      ],
+      href: "services-near-you",
+      text: "Find services near you"
+      })
+  }}
+{% endblock %}
+
+
+
+
+{% block content %}
+<div class="nhsuk-width-container">
+  <main class="" id="main-content">
+      <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+              <div class="nhsuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1">
+                  <h2 class="nhsuk-error-summary__title" id="error-summary-title">
+                      There is a problem
+                  </h2>
+                  <p>We have been unable to complete your search due to the following errors. Please fix them and try again.</p>
+                  <div class="nhsuk-error-summary__body">
+                      <ul class="nhsuk-list nhsuk-error-summary__list">
+                              <li><a href="#Location">You must enter a town, city or postcode to find a hospital</a></li>
+                      </ul>
+                  </div>
+              </div>
+
+        <h1>
+          Find a hospital
+        </h1>
+        
+        <div class="nhsuk-inset-text">
+          <span class="nhsuk-u-visually-hidden">Information: </span>
+          <p>Do not go to a hospital if you have symptoms of coronavirus (a high temperature, a new, continuous cough or a loss or change to your sense of smell or taste).</p>
+          <p>Use the <a href="https://111.nhs.uk/covid-19/">NHS 111 online coronavirus service</a> to find out what to do</p>
+        </div>
+  
+        <form name="ServiceSearchForm" id="service-search-form" method="post" action="/service-search/find-a-dentist">
+              <input type="hidden" value="DEN" data-val="true" data-val-required="The ServiceId field is required." id="ServiceId" name="ServiceId">
+              <input type="hidden" id="UsersLatitude" name="UsersLatitude" value="">
+              <input type="hidden" id="UsersLongitude" name="UsersLongitude" value="">
+              <div class="nhsuk-form-group nhsuk-form-group--error">
+                  <label class="nhsuk-label" for="Location">
+                      Enter a town, city or postcode in England
+                  </label>
+                      <div class="nhsuk-error-message">
+                          <span class="field-validation-error" data-valmsg-for="Location" data-valmsg-replace="true">You must enter a town, city or postcode to find a hospital</span>
+                      </div>
+                  <input class="nhsuk-input nhsuk-input--width-20 input-validation-error" type="text" id="Location" name="Location" value="">
+              </div>
+              <button class="nhsuk-button nhsuk-u-margin-bottom-4" type="submit">Search</button><br>
+              <button class="nhsuk-button nhsuk-button--secondary geo-locate--button nhsuk-u-margin-bottom-7">Use your location</button>
+          <input name="__RequestVerificationToken" type="hidden" value="CfDJ8C0XnBttwtZMjhCsJmTcgtlG2QnxFFjB46DCXOn7yFb8Y3UCd2efx217pomQfJjq7WW187NmpdN_iLviqErJlyc7RGJ_knzwts4RgGeTR0ZJYznjzhcllU1G09WAgYnxuVOy6B3HLUT4EbNn8uJ6OW8"></form>
+  
+  
+      </div>
+
+
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8C0XnBttwtZMjhCsJmTcgtkaciOChb4MNfjxbpc0vgg7zroZqHtenN3jE5Pd6xHP5qqk5Mw3Ex9WyLT9SlxvMWopGnJqrUNzLIbGpmW-ZTq4qktYkCsFpHm7j8A_edN5p3IIZCSMkJ9OrvKktNq5lvo"></form>
+
+
+  
+      </div>
+  </main>
+</div>
+    {% endblock %}
+
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+{{
+ footer({
+    "links": [
+      {
+        "URL": "#",
+        "label": "NHS sites"
+      },
+      {
+        "URL": "#",
+        "label": "About us"
+      },
+      {
+        "URL": "#",
+        "label": "Contact us"
+      },
+      {
+        "URL": "#",
+        "label": "Profile editor login"
+      },
+      {
+        "URL": "#",
+        "label": "Site map"
+      },
+      {
+        "URL": "#",
+        "label": "Accessibility statement"
+      },
+      {
+        "URL": "#",
+        "label": "Our policies"
+      },
+      {
+        "URL": "#",
+        "label": "Cookies"
+      }
+    ]
+  })
+}}
+{% endblock %}

@@ -1,0 +1,127 @@
+
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Find a pharmacy
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+      },
+      {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+      },
+      {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+      },
+      {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+
+{% block beforeContent %}
+  {{
+    breadcrumb({
+      items: [
+        {
+          href: "http://localhost:3000/",
+          text: "Home"
+        }
+      ],
+      href: "services-near-you",
+      text: "Find services near you"
+      })
+  }}
+{% endblock %}
+
+
+
+
+{% block content %}
+<div class="nhsuk-width-container">
+  <main class="" id="main-content">
+      <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-two-thirds">
+
+          <h1>
+            Find a pharmacy
+          </h1>
+
+          <ul class="nhsuk-list">
+            <li><a href="find-a-pharmacy">Find a pharmacy</a></li>
+            <li><a href="https://nhs.uk/service-search/other-services/pharmacies/internetpharmacies">Find an internet pharmacy</a></li>
+            <li><a href="https://nhs.uk//service-search/pharmacy/pharmacy-nhs-flu-vaccine-service">Find a pharmacy that offers the NHS flu vaccine</a></li>
+          </ul>
+          </div>
+      </div>
+  </main>
+</div>
+    {% endblock %}
+
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+{{
+ footer({
+    "links": [
+      {
+        "URL": "#",
+        "label": "NHS sites"
+      },
+      {
+        "URL": "#",
+        "label": "About us"
+      },
+      {
+        "URL": "#",
+        "label": "Contact us"
+      },
+      {
+        "URL": "#",
+        "label": "Profile editor login"
+      },
+      {
+        "URL": "#",
+        "label": "Site map"
+      },
+      {
+        "URL": "#",
+        "label": "Accessibility statement"
+      },
+      {
+        "URL": "#",
+        "label": "Our policies"
+      },
+      {
+        "URL": "#",
+        "label": "Cookies"
+      }
+    ]
+  })
+}}
+{% endblock %}

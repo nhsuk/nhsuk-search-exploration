@@ -1,0 +1,154 @@
+
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Find a pharmacy
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+      },
+      {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+      },
+      {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+      },
+      {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+{% block beforeContent %}
+  {{
+    breadcrumb({
+      items: [
+        {
+          href: "http://localhost:3000/",
+          text: "Home"
+        }
+      ],
+      href: "services-near-you",
+      text: "Find services near you"
+      })
+  }}
+{% endblock %}
+
+
+
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      {% if error %}
+        {{ errorSummary({
+          "titleText": "There is a problem",
+          "errorList": [
+            {
+              "text": "We have been unable to complete your search due to the following errors. Please fix them and try again.",
+              "href": "#postcode"
+            }
+          ]
+        }) }}
+      {% endif %}
+
+      <form action="/version1/what-is-your-postcode" method="post" class="form" id="form">
+
+        <div class="nhsuk-form-group{% if error %} nhsuk-form-group--error{% endif %}">
+          <h1 class="nhsuk-heading-l">
+              What is your postcode?
+          </h1>
+
+          <div class="nhsuk-form-group">
+            <label class="nhsuk-label" for="postcode">
+              Postcode
+            </label>
+            {% if noPostcode %}
+              <span class="nhsuk-error-message" id="postcode-error">
+                  <span class="nhsuk-u-visually-hidden">Error:</span> You must enter a town, city or postcode to find a pharmacy 
+              </span>
+              <input class="nhsuk-input nhsuk-input--error nhsuk-input--width-10" id="postcode" name="postcode" type="text" aria-describedby="postcode-hint postcode-error">
+            {% else %}
+              <input class="nhsuk-input nhsuk-input--width-10" id="postcode" name="postcode" type="text" aria-describedby="postcode-hint" value="{{ data['postcode'] | upper}}">
+            {% endif %}
+          </div>
+        </div>
+
+        {{ button({
+          "text": "Continue"
+        }) }}
+
+      </form>
+
+
+    </div>
+  </div>
+{% endblock %}
+
+
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+{{
+ footer({
+    "links": [
+      {
+        "URL": "#",
+        "label": "NHS sites"
+      },
+      {
+        "URL": "#",
+        "label": "About us"
+      },
+      {
+        "URL": "#",
+        "label": "Contact us"
+      },
+      {
+        "URL": "#",
+        "label": "Profile editor login"
+      },
+      {
+        "URL": "#",
+        "label": "Site map"
+      },
+      {
+        "URL": "#",
+        "label": "Accessibility statement"
+      },
+      {
+        "URL": "#",
+        "label": "Our policies"
+      },
+      {
+        "URL": "#",
+        "label": "Cookies"
+      }
+    ]
+  })
+}}
+{% endblock %}

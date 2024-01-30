@@ -1,0 +1,1116 @@
+
+{% extends 'template-1.html' %}
+
+{% block pageTitle %}
+  Other health services
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': '',
+        'label' : 'Live Well'
+      },
+      {
+        'url': '',
+        'label' : 'Mental health'
+      },
+      {
+        'url': '',
+        'label' : 'Care and support'
+      },
+      {
+        'url': '',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': '../nhs-services',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<div class="nhsuk-width-container">            
+            
+
+  <main class="nhsuk-main-wrapper nhsuk-main-wrapper--s" id="main-content">
+      
+<div class="nhsuk-back-link nhsuk-app-back-link nhsuk-u-padding-top-5" style="display:none">
+<a class="nhsuk-back-link__link nhsapp-open-in-webview" id="app-backlink" href="javascript:history.back()">
+  <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+      <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+  </svg>
+  Go back
+</a>
+</div>
+
+      
+<div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-full">
+<h1>Services A to Z</h1>
+<nav class="nhsuk-u-margin-bottom-4 nhsuk-u-margin-top-4" id="nhsuk-nav-a-z" aria-label="NHS Services A to Z">
+  <ol class="nhsuk-list nhsuk-u-clear nhsuk-u-margin-0">
+          <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                  <a id="linked_letter_for_A" class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#A">A</a>
+          </li>
+          <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                  <a id="linked_letter_for_B" class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#B">B</a>
+          </li>
+          <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                  <a id="linked_letter_for_C" class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#C">C</a>
+          </li>
+          <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                  <a id="linked_letter_for_D" class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#D">D</a>
+          </li>
+          <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                  <a id="linked_letter_for_E" class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#E">E</a>
+          </li>
+          <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                  <a id="linked_letter_for_F" class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#F">F</a>
+          </li>
+          <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                  <a id="linked_letter_for_G" class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#G">G</a>
+          </li>
+          <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                  <a id="linked_letter_for_H" class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#H">H</a>
+          </li>
+          <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                  <a id="linked_letter_for_I" class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#I">I</a>
+          </li>
+          <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                  <span id="non_linked_letter_for_J" class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block nhsuk-u-secondary-text-color">J</span>
+          </li>
+          <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                  <a id="linked_letter_for_K" class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#K">K</a>
+          </li>
+          <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                  <a id="linked_letter_for_L" class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#L">L</a>
+          </li>
+          <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                  <a id="linked_letter_for_M" class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#M">M</a>
+          </li>
+          <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                  <a id="linked_letter_for_N" class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#N">N</a>
+          </li>
+          <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                  <a id="linked_letter_for_O" class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#O">O</a>
+          </li>
+          <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                  <a id="linked_letter_for_P" class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#P">P</a>
+          </li>
+          <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                  <span id="non_linked_letter_for_Q" class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block nhsuk-u-secondary-text-color">Q</span>
+          </li>
+          <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                  <a id="linked_letter_for_R" class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#R">R</a>
+          </li>
+          <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                  <a id="linked_letter_for_S" class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#S">S</a>
+          </li>
+          <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                  <a id="linked_letter_for_T" class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#T">T</a>
+          </li>
+          <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                  <a id="linked_letter_for_U" class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#U">U</a>
+          </li>
+          <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                  <a id="linked_letter_for_V" class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#V">V</a>
+          </li>
+          <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                  <a id="linked_letter_for_W" class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#W">W</a>
+          </li>
+          <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                  <span id="non_linked_letter_for_X" class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block nhsuk-u-secondary-text-color">X</span>
+          </li>
+          <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                  <a id="linked_letter_for_Y" class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#Y">Y</a>
+          </li>
+          <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                  <span id="non_linked_letter_for_Z" class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block nhsuk-u-secondary-text-color">Z</span>
+          </li>
+  </ol>
+</nav>
+  <div class="nhsuk-card nhsuk-card--feature">
+      <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="A">A</h2>
+              <ul class="nhsuk-list nhsuk-list--border">
+                          <li class="fas-card__list">
+                                  <a id="entry_0_for_letter_A" href="/service-search/other-health-services/abdominal-aortic-aneurysm-screening">Abdominal aortic aneurysm screening</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_1_for_letter_A" href="/service-search/find-an-accident-and-emergency-service/">Accident and emergency services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_2_for_letter_A" href="/service-search/other-health-services/adventure-outdoor-sports">Adventure/outdoor sports</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_3_for_letter_A" href="/nhs-services/find-alcohol-addiction-support-services/">Alcohol addiction</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_4_for_letter_A" href="/service-search/other-health-services/allergy-services-in-hospital">Allergy services in hospital</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_5_for_letter_A" href="/service-search/other-health-services/alzheimers-information-and-support">Alzheimer's information and support</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_6_for_letter_A" href="/service-search/other-health-services/antenatal-classes">Antenatal classes</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_7_for_letter_A" href="/service-search/other-health-services/arthritis-information-and-support">Arthritis information and support</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_8_for_letter_A" href="/service-search/other-health-services/assertive-outreach-services">Assertive outreach services</a>
+                          </li>
+              </ul>
+      </div>
+  </div>
+  <div class="nhsuk-back-to-top">
+      <a id="back_to_top_link_for_letter_A" class="nhsuk-back-to-top__link nhsuk-u-margin-left-0 nhsuk-u-margin-top-0 nhsuk-u-padding-left-0" href="#nhsuk-nav-a-z">
+          Back to top
+      </a>
+  </div>
+  <div class="nhsuk-card nhsuk-card--feature">
+      <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="B">B</h2>
+              <ul class="nhsuk-list nhsuk-list--border">
+                          <li class="fas-card__list">
+                                  <a id="entry_0_for_letter_B" href="/service-search/other-health-services/bariatric-surgery">Bariatric surgery</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_1_for_letter_B" href="/service-search/other-health-services/bereavement-support">Bereavement support</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_2_for_letter_B" href="/service-search/other-health-services/breast-screening-services">Breast screening services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_3_for_letter_B" href="/service-search/other-health-services/breast-surgery">Breast Surgery</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_4_for_letter_B" href="/service-search/other-health-services/breastfeeding-support-services">Breastfeeding support services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_5_for_letter_B" href="/service-search/other-health-services/breathe-easy-support-groups">Breathe Easy support groups</a>
+                          </li>
+              </ul>
+      </div>
+  </div>
+  <div class="nhsuk-back-to-top">
+      <a id="back_to_top_link_for_letter_B" class="nhsuk-back-to-top__link nhsuk-u-margin-left-0 nhsuk-u-margin-top-0 nhsuk-u-padding-left-0" href="#nhsuk-nav-a-z">
+          Back to top
+      </a>
+  </div>
+  <div class="nhsuk-card nhsuk-card--feature">
+      <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="C">C</h2>
+              <ul class="nhsuk-list nhsuk-list--border">
+                          <li class="fas-card__list">
+                                  <a id="entry_0_for_letter_C" href="/service-search/other-health-services/cancer-information-and-support">Cancer information and support</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_1_for_letter_C" href="/service-search/other-health-services/cancer-support-for-women">Cancer support for women</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_2_for_letter_C" href="/service-search/other-health-services/cardiology">Cardiology</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_3_for_letter_C" href="/service-search/other-health-services/cardiothoracic-surgery">Cardiothoracic surgery</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_4_for_letter_C" href="/service-search/other-services/Care%20home%20with%20nursing/LocationSearch/1831">Care home with nursing</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_5_for_letter_C" href="/service-search/other-services/Care%20home%20without%20nursing/LocationSearch/1832">Care home without nursing</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_6_for_letter_C" href="/service-search/other-health-services/carer-benefits-and-legal-services">Carer benefits and legal services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_7_for_letter_C" href="/service-search/other-health-services/carer-centres-and-services">Carer centres and services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_8_for_letter_C" href="/service-search/other-health-services/carer-service-for-bme-groups">Carer service for BME groups</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_9_for_letter_C" href="/service-search/other-health-services/carers-emergency-schemes">Carers emergency schemes</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_10_for_letter_C" href="/service-search/other-health-services/carers-emotional-support-services">Carers emotional support services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_11_for_letter_C" href="/service-search/other-health-services/carers-relationship-support">Carers relationship support</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_12_for_letter_C" href="/service-search/other-health-services/carers-respite-and-breaks">Carers respite and breaks</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_13_for_letter_C" href="/service-search/other-health-services/carers-training-and-education">Carers training and education</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_14_for_letter_C" href="/service-search/other-health-services/carers-travel-and-transport">Carers travel and transport</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_15_for_letter_C" href="/service-search/other-health-services/caring-and-working-information-services">Caring and working information services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_16_for_letter_C" href="/service-search/other-health-services/caring-for-adults-over-65">Caring for adults over 65</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_17_for_letter_C" href="/service-search/other-health-services/caring-for-adults-under-65">Caring for adults under 65</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_18_for_letter_C" href="/service-search/other-health-services/caring-for-children-0-18">Caring for children (0 - 18)</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_19_for_letter_C" href="/service-search/other-health-services/cataract-surgery">Cataract Surgery</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_20_for_letter_C" href="/service-search/other-health-services/child-and-adolescent-mental-health-services-camhs">Child and adolescent mental health services (CAMHS)</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_21_for_letter_C" href="/service-search/other-health-services/childrens-adolescent-services">Children's &amp; Adolescent Services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_22_for_letter_C" href="/service-search/other-health-services/chlamydia-free-online-tests-for-u25s">Chlamydia - free online tests for u-25s</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_23_for_letter_C" href="/service-search/other-health-services/chlamydia-screening-under-25s">Chlamydia screening under 25s</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_24_for_letter_C" href="/service-search/other-health-services/community-mental-health-services">Community mental health services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_25_for_letter_C" href="/service-search/other-health-services/contraception-information-and-advice">Contraception information and advice</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_26_for_letter_C" href="/service-search/other-health-services/counselling-for-alcohol-addiction">Counselling for alcohol addiction</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_27_for_letter_C" href="/service-search/other-health-services/counselling-for-drug-addiction">Counselling for drug addiction</a>
+                          </li>
+              </ul>
+      </div>
+  </div>
+  <div class="nhsuk-back-to-top">
+      <a id="back_to_top_link_for_letter_C" class="nhsuk-back-to-top__link nhsuk-u-margin-left-0 nhsuk-u-margin-top-0 nhsuk-u-padding-left-0" href="#nhsuk-nav-a-z">
+          Back to top
+      </a>
+  </div>
+  <div class="nhsuk-card nhsuk-card--feature">
+      <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="D">D</h2>
+              <ul class="nhsuk-list nhsuk-list--border">
+                          <li class="fas-card__list">
+                                  <a id="entry_0_for_letter_D" href="/service-search/other-health-services/dementia-information-and-support">Dementia information and support</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_1_for_letter_D" href="/service-search/find-a-dentist">Dentist</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_2_for_letter_D" href="/service-search/other-health-services/dentistry-and-orthodontics">Dentistry and Orthodontics</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_3_for_letter_D" href="/service-search/other-health-services/dermatology">Dermatology</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_4_for_letter_D" href="/service-search/other-health-services/diabetes-information-and-support">Diabetes information and support</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_5_for_letter_D" href="/service-search/other-health-services/diabetic-eye-screening">Diabetic eye screening</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_6_for_letter_D" href="/service-search/other-health-services/diabetic-medicine">Diabetic Medicine</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_7_for_letter_D" href="/service-search/other-health-services/diagnostic-imaging">Diagnostic Imaging</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_8_for_letter_D" href="/service-search/other-health-services/dietetics">Dietetics</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_9_for_letter_D" href="/service-search/other-health-services/disability-information-and-support">Disability information and support</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_10_for_letter_D" href="/service-search/other-health-services/disability-sports-and-classes">Disability sports and classes</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_11_for_letter_D" href="https://www.womensaid.org.uk/womens-aid-directory/">Domestic violence information and support</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_12_for_letter_D" href="/service-search/other-health-services/drug-addiction-support">Drug addiction support</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_13_for_letter_D" href="/service-search/other-health-services/drug-and-alcohol-services">Drug and alcohol Services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_14_for_letter_D" href="/service-search/other-health-services/drug-misuse-support-for-family-and-friends">Drug misuse - support for family and friends</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_15_for_letter_D" href="/service-search/other-health-services/drug-services-for-hiv">Drug services for HIV</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_16_for_letter_D" href="/service-search/other-health-services/drug-treatment-services">Drug treatment services</a>
+                          </li>
+              </ul>
+      </div>
+  </div>
+  <div class="nhsuk-back-to-top">
+      <a id="back_to_top_link_for_letter_D" class="nhsuk-back-to-top__link nhsuk-u-margin-left-0 nhsuk-u-margin-top-0 nhsuk-u-padding-left-0" href="#nhsuk-nav-a-z">
+          Back to top
+      </a>
+  </div>
+  <div class="nhsuk-card nhsuk-card--feature">
+      <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="E">E</h2>
+              <ul class="nhsuk-list nhsuk-list--border">
+                          <li class="fas-card__list">
+                                  <a id="entry_0_for_letter_E" href="/service-search/other-health-services/ear-nose-throat">Ear, Nose &amp; Throat</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_1_for_letter_E" href="/service-search/other-health-services/early-intervention-services">Early intervention services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_2_for_letter_E" href="/service-search/other-health-services/eating-disorders-inpatient">Eating disorders (inpatient)</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_3_for_letter_E" href="/service-search/other-health-services/eating-disorders-outpatient">Eating disorders (outpatient)</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_4_for_letter_E" href="/service-search/other-health-services/electroconvulsive-therapy-services">Electro-convulsive therapy services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_5_for_letter_E" href="/service-search/other-health-services/emergency-abdominal-surgery">Emergency Abdominal Surgery</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_6_for_letter_E" href="/service-search/other-health-services/emergency-contraception">Emergency contraception</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_7_for_letter_E" href="/service-search/other-health-services/endocrine-and-thyroid-surgery">Endocrine and thyroid surgery</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_8_for_letter_E" href="/service-search/other-health-services/endocrinology-and-metabolic-medicine">Endocrinology and Metabolic Medicine</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_9_for_letter_E" href="/service-search/other-health-services/eye-accident-and-emergency-services">Eye - accident and emergency services</a>
+                          </li>
+              </ul>
+      </div>
+  </div>
+  <div class="nhsuk-back-to-top">
+      <a id="back_to_top_link_for_letter_E" class="nhsuk-back-to-top__link nhsuk-u-margin-left-0 nhsuk-u-margin-top-0 nhsuk-u-padding-left-0" href="#nhsuk-nav-a-z">
+          Back to top
+      </a>
+  </div>
+  <div class="nhsuk-card nhsuk-card--feature">
+      <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="F">F</h2>
+              <ul class="nhsuk-list nhsuk-list--border">
+                          <li class="fas-card__list">
+                                  <a id="entry_0_for_letter_F" href="/service-search/other-health-services/fitness-activities-and-classes">Fitness activities and classes</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_1_for_letter_F" href="/service-search/other-health-services/forensic-mental-health-community">Forensic mental health (community)</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_2_for_letter_F" href="/service-search/other-health-services/forensic-mental-health-inpatient">Forensic mental health (inpatient)</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_3_for_letter_F" href="/service-search/other-health-services/free-condoms">Free condoms</a>
+                          </li>
+              </ul>
+      </div>
+  </div>
+  <div class="nhsuk-back-to-top">
+      <a id="back_to_top_link_for_letter_F" class="nhsuk-back-to-top__link nhsuk-u-margin-left-0 nhsuk-u-margin-top-0 nhsuk-u-padding-left-0" href="#nhsuk-nav-a-z">
+          Back to top
+      </a>
+  </div>
+  <div class="nhsuk-card nhsuk-card--feature">
+      <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="G">G</h2>
+              <ul class="nhsuk-list nhsuk-list--border">
+                          <li class="fas-card__list">
+                                  <a id="entry_0_for_letter_G" href="/service-search/other-health-services/gastrointestinal-and-liver-services">Gastrointestinal and Liver services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_1_for_letter_G" href="/service-search/other-health-services/gender-identity-services">Gender identity services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_2_for_letter_G" href="/service-search/other-health-services/general-medicine">General Medicine</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_3_for_letter_G" href="/service-search/other-health-services/general-sports">General sports</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_4_for_letter_G" href="/service-search/other-health-services/general-surgery">General Surgery</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_5_for_letter_G" href="/service-search/other-health-services/genetics">Genetics</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_6_for_letter_G" href="/service-search/other-health-services/genitourinary-medicine">Genito-Urinary Medicine</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_7_for_letter_G" href="/service-search/other-health-services/geriatric-medicine">Geriatric Medicine</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_8_for_letter_G" href="/service-search/find-a-gp">GP</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_9_for_letter_G" href="/service-search/other-health-services/gynaecology">Gynaecology</a>
+                          </li>
+              </ul>
+      </div>
+  </div>
+  <div class="nhsuk-back-to-top">
+      <a id="back_to_top_link_for_letter_G" class="nhsuk-back-to-top__link nhsuk-u-margin-left-0 nhsuk-u-margin-top-0 nhsuk-u-padding-left-0" href="#nhsuk-nav-a-z">
+          Back to top
+      </a>
+  </div>
+  <div class="nhsuk-card nhsuk-card--feature">
+      <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="H">H</h2>
+              <ul class="nhsuk-list nhsuk-list--border">
+                          <li class="fas-card__list">
+                                  <a id="entry_0_for_letter_H" href="/service-search/other-health-services/haematology">Haematology</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_1_for_letter_H" href="/service-search/other-health-services/head-injury-information-and-support">Head injury information and support</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_2_for_letter_H" href="/service-search/other-health-services/healthwatch">Healthwatch</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_3_for_letter_H" href="/service-search/other-health-services/healthy-start-vitamins">Healthy start vitamins</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_4_for_letter_H" href="/service-search/other-health-services/hearing-impairment-information-and-support">Hearing impairment information and support</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_5_for_letter_H" href="/service-search/other-health-services/heart-disease-information-and-support">Heart disease information and support</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_6_for_letter_H" href="/service-search/other-health-services/hepatitis-c-information-and-support">Hepatitis C information and support</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_7_for_letter_H" href="/service-search/other-health-services/hiv-advice-and-advocacy">HIV advice and advocacy</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_8_for_letter_H" href="/service-search/other-health-services/hiv-sexual-health-services">HIV sexual health services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_9_for_letter_H" href="/service-search/other-health-services/hiv-support">HIV support</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_10_for_letter_H" href="/service-search/other-health-services/hiv-testing">HIV testing</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_11_for_letter_H" href="/service-search/other-health-services/hiv-treatment">HIV treatment</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_12_for_letter_H" href="/service-search/other-health-services/home-aids-and-adaptions">Home aids and adaptions</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_13_for_letter_H" href="/Service-Search/other-services/Homecare/LocationSearch/1833">Home care</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_14_for_letter_H" href="/service-search/hospital">Hospital</a>
+                          </li>
+              </ul>
+      </div>
+  </div>
+  <div class="nhsuk-back-to-top">
+      <a id="back_to_top_link_for_letter_H" class="nhsuk-back-to-top__link nhsuk-u-margin-left-0 nhsuk-u-margin-top-0 nhsuk-u-padding-left-0" href="#nhsuk-nav-a-z">
+          Back to top
+      </a>
+  </div>
+  <div class="nhsuk-card nhsuk-card--feature">
+      <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="I">I</h2>
+              <ul class="nhsuk-list nhsuk-list--border">
+                          <li class="fas-card__list">
+                                  <a id="entry_0_for_letter_I" href="/service-search/other-health-services/infectious-diseases">Infectious Diseases</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_1_for_letter_I" href="/service-search/other-health-services/inflammatory-bowel-disease-information-and-support">Inflammatory bowel disease information and support</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_2_for_letter_I" href="/service-search/other-health-services/inpatient-diabetes">Inpatient Diabetes</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_3_for_letter_I" href="/service-search/other-health-services/inpatient-mental-health-services">Inpatient mental health services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_4_for_letter_I" href="/service-search/other-health-services/intensive-care">Intensive Care</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_5_for_letter_I" href="/service-search/other-health-services/interventional-radiology">Interventional Radiology</a>
+                          </li>
+              </ul>
+      </div>
+  </div>
+  <div class="nhsuk-back-to-top">
+      <a id="back_to_top_link_for_letter_I" class="nhsuk-back-to-top__link nhsuk-u-margin-left-0 nhsuk-u-margin-top-0 nhsuk-u-padding-left-0" href="#nhsuk-nav-a-z">
+          Back to top
+      </a>
+  </div>
+  <div class="nhsuk-card nhsuk-card--feature">
+      <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="J">J</h2>
+              <div class="nhsuk-list nhsuk-list--border">
+                  <p id="no_entries_for_letter_J" class="fas-card-empty__list">There are currently no services listed</p>
+              </div>
+      </div>
+  </div>
+  <div class="nhsuk-back-to-top">
+      <a id="back_to_top_link_for_letter_J" class="nhsuk-back-to-top__link nhsuk-u-margin-left-0 nhsuk-u-margin-top-0 nhsuk-u-padding-left-0" href="#nhsuk-nav-a-z">
+          Back to top
+      </a>
+  </div>
+  <div class="nhsuk-card nhsuk-card--feature">
+      <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="K">K</h2>
+              <ul class="nhsuk-list nhsuk-list--border">
+                          <li class="fas-card__list">
+                                  <a id="entry_0_for_letter_K" href="/service-search/other-health-services/kidney-disease-information-and-support">Kidney disease information and support</a>
+                          </li>
+              </ul>
+      </div>
+  </div>
+  <div class="nhsuk-back-to-top">
+      <a id="back_to_top_link_for_letter_K" class="nhsuk-back-to-top__link nhsuk-u-margin-left-0 nhsuk-u-margin-top-0 nhsuk-u-padding-left-0" href="#nhsuk-nav-a-z">
+          Back to top
+      </a>
+  </div>
+  <div class="nhsuk-card nhsuk-card--feature">
+      <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="L">L</h2>
+              <ul class="nhsuk-list nhsuk-list--border">
+                          <li class="fas-card__list">
+                                  <a id="entry_0_for_letter_L" href="/service-search/other-health-services/local-authority-adult-social-care">Local Authority Adult Social Care</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_1_for_letter_L" href="/service-search/other-health-services/lung-cancer-services">Lung cancer services</a>
+                          </li>
+              </ul>
+      </div>
+  </div>
+  <div class="nhsuk-back-to-top">
+      <a id="back_to_top_link_for_letter_L" class="nhsuk-back-to-top__link nhsuk-u-margin-left-0 nhsuk-u-margin-top-0 nhsuk-u-padding-left-0" href="#nhsuk-nav-a-z">
+          Back to top
+      </a>
+  </div>
+  <div class="nhsuk-card nhsuk-card--feature">
+      <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="M">M</h2>
+              <ul class="nhsuk-list nhsuk-list--border">
+                          <li class="fas-card__list">
+                                  <a id="entry_0_for_letter_M" href="/service-search/other-health-services/macular-disease-information-and-support">Macular disease information and support</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_1_for_letter_M" href="/service-search/other-health-services/major-trauma">Major trauma</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_2_for_letter_M" href="/service-search/other-health-services/maternity-services">Maternity services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_3_for_letter_M" href="/service-search/other-health-services/memory-services">Memory services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_4_for_letter_M" href="/service-search/other-health-services/mental-health-adults-of-all-ages">Mental Health - Adults of all ages</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_5_for_letter_M" href="/service-search/other-health-services/mental-health-child-and-adolescent">Mental Health - Child and Adolescent</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_6_for_letter_M" href="/service-search/other-health-services/mental-health-conditions">Mental health conditions</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_7_for_letter_M" href="/service-search/other-health-services/mental-health-services-for-drug-misuse">Mental health services for drug misuse</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_8_for_letter_M" href="/service-search/other-health-services/mental-health-support">Mental health support</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_9_for_letter_M" href="/service-search/other-health-services/mental-health-support-for-young-people">Mental health support for young people</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_10_for_letter_M" href="/service-search/other-health-services/metabolic-conditions-information-and-support">Metabolic conditions information and support</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_11_for_letter_M" href="/conditions/mpox/find-a-mpox-vaccination-site/">Mpox vaccination site</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_12_for_letter_M" href="/service-search/other-health-services/multiple-sclerosis-nurse-services">Multiple sclerosis nurse services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_13_for_letter_M" href="/service-search/other-health-services/multiple-sclerosis-therapy-centres">Multiple sclerosis therapy centres</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_14_for_letter_M" href="/service-search/other-health-services/muscular-dystrophy-information-and-support">Muscular dystrophy information and support</a>
+                          </li>
+              </ul>
+      </div>
+  </div>
+  <div class="nhsuk-back-to-top">
+      <a id="back_to_top_link_for_letter_M" class="nhsuk-back-to-top__link nhsuk-u-margin-left-0 nhsuk-u-margin-top-0 nhsuk-u-padding-left-0" href="#nhsuk-nav-a-z">
+          Back to top
+      </a>
+  </div>
+  <div class="nhsuk-card nhsuk-card--feature">
+      <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="N">N</h2>
+              <ul class="nhsuk-list nhsuk-list--border">
+                          <li class="fas-card__list">
+                                  <a id="entry_0_for_letter_N" href="/service-search/other-health-services/neonatal-care">Neonatal Care</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_1_for_letter_N" href="/service-search/other-health-services/nephrology">Nephrology</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_2_for_letter_N" href="/service-search/other-health-services/neurology">Neurology</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_3_for_letter_N" href="/service-search/other-health-services/neurosurgery">Neurosurgery</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_4_for_letter_N" href="/service-search/other-health-services/newborn-hearing-screening">Newborn hearing screening</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_5_for_letter_N" href="/nhs-services/prescriptions-and-pharmacies/pharmacy-nhs-flu-vaccine-service">NHS flu vaccination</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_6_for_letter_N" href="/service-search/other-health-services/nhs-health-check">NHS Health Check</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_7_for_letter_N" href="/service-search/find-an-nhs-sight-test/location">NHS sight tests</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_8_for_letter_N" href="/service-search/mental-health/find-an-NHS-talking-therapies-service/">NHS talking therapies</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_9_for_letter_N" href="/service-search/mental-health/find-an-urgent-mental-health-helpline">NHS urgent mental health helpline</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_10_for_letter_N" href="/service-search/other-health-services/nonsport-activities-and-classes">Non-sport activities and classes</a>
+                          </li>
+              </ul>
+      </div>
+  </div>
+  <div class="nhsuk-back-to-top">
+      <a id="back_to_top_link_for_letter_N" class="nhsuk-back-to-top__link nhsuk-u-margin-left-0 nhsuk-u-margin-top-0 nhsuk-u-padding-left-0" href="#nhsuk-nav-a-z">
+          Back to top
+      </a>
+  </div>
+  <div class="nhsuk-card nhsuk-card--feature">
+      <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="O">O</h2>
+              <ul class="nhsuk-list nhsuk-list--border">
+                          <li class="fas-card__list">
+                                  <a id="entry_0_for_letter_O" href="/service-search/other-health-services/obstetrics">Obstetrics</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_1_for_letter_O" href="/service-search/other-health-services/occupational-therapy-services">Occupational therapy services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_2_for_letter_O" href="/service-search/other-health-services/oesophagogastric-cancer-surgery">Oesophago-Gastric cancer surgery</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_3_for_letter_O" href="/service-search/other-health-services/oncology-medical">Oncology - Medical</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_4_for_letter_O" href="/service-search/other-health-services/oral-and-maxillofacial-surgery">Oral and Maxillofacial Surgery</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_5_for_letter_O" href="/service-search/other-health-services/orthopaedics">Orthopaedics</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_6_for_letter_O" href="/service-search/other-health-services/orthotics-and-prosthetics">Orthotics and Prosthetics</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_7_for_letter_O" href="/service-search/other-health-services/outpatient-mental-health-services">Outpatient mental health services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_8_for_letter_O" href="/service-search/other-health-services/ovarian-cancer-information-and-support">Ovarian cancer information and support</a>
+                          </li>
+              </ul>
+      </div>
+  </div>
+  <div class="nhsuk-back-to-top">
+      <a id="back_to_top_link_for_letter_O" class="nhsuk-back-to-top__link nhsuk-u-margin-left-0 nhsuk-u-margin-top-0 nhsuk-u-padding-left-0" href="#nhsuk-nav-a-z">
+          Back to top
+      </a>
+  </div>
+  <div class="nhsuk-card nhsuk-card--feature">
+      <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="P">P</h2>
+              <ul class="nhsuk-list nhsuk-list--border">
+                          <li class="fas-card__list">
+                                  <a id="entry_0_for_letter_P" href="/service-search/other-health-services/paediatric-intensive-care">Paediatric intensive care</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_1_for_letter_P" href="/service-search/other-health-services/paediatrics-services">Paediatrics services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_2_for_letter_P" href="/service-search/other-health-services/palliative-care">Palliative care</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_3_for_letter_P" href="/service-search/other-health-services/palliative-medicine">Palliative Medicine</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_4_for_letter_P" href="/service-search/other-health-services/parent-carers-services">Parent carers services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_5_for_letter_P" href="/service-search/other-health-services/parenting-information-and-support">Parenting information and support</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_6_for_letter_P" href="/service-search/other-health-services/parkinsons-disease-information-and-support">Parkinson's disease information and support</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_7_for_letter_P" href="/service-search/other-health-services/patient-advice-and-liaison-services-pals">Patient advice and liaison services (PALS)</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_8_for_letter_P" href="/service-search/other-health-services/people-subject-to-mental-health-act">People subject to Mental Health Act</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_9_for_letter_P" href="/service-search/other-health-services/personal-care">Personal care</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_10_for_letter_P" href="/service-search/other-health-services/personality-disorder-services">Personality disorder services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_11_for_letter_P" href="/service-search/pharmacy/find-a-pharmacy">Pharmacy</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_12_for_letter_P" href="/nhs-services/covid-19-services/covid-19-vaccination-services/find-a-walk-in-covid-19-vaccination-site/">Pharmacy offering COVID-19 vaccination services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_13_for_letter_P" href="/nhs-services/prescriptions-and-pharmacies/find-a-pharmacy-that-offers-free-blood-pressure-checks/">Pharmacy that offers free blood pressure checks</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_14_for_letter_P" href="/nhs-services/prescriptions-and-pharmacies/find-a-pharmacy-offering-contraceptive-pill-without-prescription/">Pharmacy that offers the contraceptive pill without a prescription</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_15_for_letter_P" href="/service-search/other-health-services/physical-disabilities">Physical disabilities</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_16_for_letter_P" href="/service-search/other-health-services/physiotherapy">Physiotherapy</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_17_for_letter_P" href="/service-search/other-health-services/podiatrists-and-chiropodists">Podiatrists and chiropodists</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_18_for_letter_P" href="/service-search/other-health-services/podiatry">Podiatry</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_19_for_letter_P" href="/service-search/other-health-services/pregnancy-termination">Pregnancy termination</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_20_for_letter_P" href="/service-search/other-health-services/pregnancy-testing">Pregnancy testing</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_21_for_letter_P" href="/service-search/other-health-services/psychiatric-intensive-care-unit">Psychiatric intensive care unit</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_22_for_letter_P" href="/service-search/other-health-services/psychology-service">Psychology service</a>
+                          </li>
+              </ul>
+      </div>
+  </div>
+  <div class="nhsuk-back-to-top">
+      <a id="back_to_top_link_for_letter_P" class="nhsuk-back-to-top__link nhsuk-u-margin-left-0 nhsuk-u-margin-top-0 nhsuk-u-padding-left-0" href="#nhsuk-nav-a-z">
+          Back to top
+      </a>
+  </div>
+  <div class="nhsuk-card nhsuk-card--feature">
+      <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="Q">Q</h2>
+              <div class="nhsuk-list nhsuk-list--border">
+                  <p id="no_entries_for_letter_Q" class="fas-card-empty__list">There are currently no services listed</p>
+              </div>
+      </div>
+  </div>
+  <div class="nhsuk-back-to-top">
+      <a id="back_to_top_link_for_letter_Q" class="nhsuk-back-to-top__link nhsuk-u-margin-left-0 nhsuk-u-margin-top-0 nhsuk-u-padding-left-0" href="#nhsuk-nav-a-z">
+          Back to top
+      </a>
+  </div>
+  <div class="nhsuk-card nhsuk-card--feature">
+      <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="R">R</h2>
+              <ul class="nhsuk-list nhsuk-list--border">
+                          <li class="fas-card__list">
+                                  <a id="entry_0_for_letter_R" href="/service-search/other-health-services/rape-and-sexual-assault-referral-centres">Rape and sexual assault referral centres</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_1_for_letter_R" href="/service-search/other-health-services/reflexology-services">Reflexology services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_2_for_letter_R" href="/service-search/other-health-services/relationship-counselling">Relationship counselling</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_3_for_letter_R" href="/service-search/other-health-services/respiratory-medicine">Respiratory Medicine</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_4_for_letter_R" href="/service-search/other-health-services/rheumatology">Rheumatology</a>
+                          </li>
+              </ul>
+      </div>
+  </div>
+  <div class="nhsuk-back-to-top">
+      <a id="back_to_top_link_for_letter_R" class="nhsuk-back-to-top__link nhsuk-u-margin-left-0 nhsuk-u-margin-top-0 nhsuk-u-padding-left-0" href="#nhsuk-nav-a-z">
+          Back to top
+      </a>
+  </div>
+  <div class="nhsuk-card nhsuk-card--feature">
+      <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="S">S</h2>
+              <ul class="nhsuk-list nhsuk-list--border">
+                          <li class="fas-card__list">
+                                  <a id="entry_0_for_letter_S" href="/service-search/other-health-services/sensory-impairments">Sensory impairments</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_1_for_letter_S" href="/service-search/sexual-health/find-a-sexual-health-clinic">Sexual health clinics</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_2_for_letter_S" href="/service-search/other-health-services/sexual-health-information-and-support">Sexual health information and support</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_3_for_letter_S" href="/service-search/other-health-services/sexual-health-services-for-young-people">Sexual health services for young people</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_4_for_letter_S" href="/service-search/other-services/Shared%20lives/LocationSearch/1834">Shared lives</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_5_for_letter_S" href="/service-search/other-health-services/sleep-medicine">Sleep Medicine</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_6_for_letter_S" href="/service-search/other-health-services/smoking-cessation-clinic">Smoking cessation clinic</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_7_for_letter_S" href="/service-search/other-health-services/spinal-injury-information-and-support">Spinal injury information and support</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_8_for_letter_S" href="/service-search/other-health-services/sports-and-fitness">Sports and Fitness</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_9_for_letter_S" href="/service-search/other-health-services/sti-testing-and-treatment">STI testing and treatment</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_10_for_letter_S" href="/service-search/other-health-services/stoma-support">Stoma support</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_11_for_letter_S" href="/service-search/other-health-services/stop-smoking-services">Stop smoking services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_12_for_letter_S" href="/service-search/other-health-services/stop-smoking-support-services">Stop smoking support services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_13_for_letter_S" href="/service-search/other-health-services/stroke-information-and-support">Stroke information and support</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_14_for_letter_S" href="/service-search/other-health-services/stroke-support-for-younger-people">Stroke support for younger people</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_15_for_letter_S" href="/service-search/other-health-services/substance-misuse-problems">Substance misuse problems</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_16_for_letter_S" href="/service-search/other-health-services/support-and-recovery-services">Support and recovery services</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_17_for_letter_S" href="/service-search/other-services/Supported%20living%20services/LocationSearch/1835">Supported living services</a>
+                          </li>
+              </ul>
+      </div>
+  </div>
+  <div class="nhsuk-back-to-top">
+      <a id="back_to_top_link_for_letter_S" class="nhsuk-back-to-top__link nhsuk-u-margin-left-0 nhsuk-u-margin-top-0 nhsuk-u-padding-left-0" href="#nhsuk-nav-a-z">
+          Back to top
+      </a>
+  </div>
+  <div class="nhsuk-card nhsuk-card--feature">
+      <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="T">T</h2>
+              <ul class="nhsuk-list nhsuk-list--border">
+                          <li class="fas-card__list">
+                                  <a id="entry_0_for_letter_T" href="/service-search/other-health-services/team-sports">Team sports</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_1_for_letter_T" href="/service-search/other-health-services/teenage-parent-support-services">Teenage parent support services</a>
+                          </li>
+              </ul>
+      </div>
+  </div>
+  <div class="nhsuk-back-to-top">
+      <a id="back_to_top_link_for_letter_T" class="nhsuk-back-to-top__link nhsuk-u-margin-left-0 nhsuk-u-margin-top-0 nhsuk-u-padding-left-0" href="#nhsuk-nav-a-z">
+          Back to top
+      </a>
+  </div>
+  <div class="nhsuk-card nhsuk-card--feature">
+      <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="U">U</h2>
+              <ul class="nhsuk-list nhsuk-list--border">
+                          <li class="fas-card__list">
+                                  <a id="entry_0_for_letter_U" href="/service-search/other-health-services/unplanned-pregnancy-information-and-support">Unplanned pregnancy information and support</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_1_for_letter_U" href="/service-search/find-an-urgent-treatment-centre/">Urgent treatment centre</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_2_for_letter_U" href="/service-search/other-health-services/urology">Urology</a>
+                          </li>
+              </ul>
+      </div>
+  </div>
+  <div class="nhsuk-back-to-top">
+      <a id="back_to_top_link_for_letter_U" class="nhsuk-back-to-top__link nhsuk-u-margin-left-0 nhsuk-u-margin-top-0 nhsuk-u-padding-left-0" href="#nhsuk-nav-a-z">
+          Back to top
+      </a>
+  </div>
+  <div class="nhsuk-card nhsuk-card--feature">
+      <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="V">V</h2>
+              <ul class="nhsuk-list nhsuk-list--border">
+                          <li class="fas-card__list">
+                                  <a id="entry_0_for_letter_V" href="/service-search/other-health-services/vascular-surgery">Vascular surgery</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_1_for_letter_V" href="/service-search/other-health-services/vasectomy">Vasectomy</a>
+                          </li>
+                          <li class="fas-card__list">
+                                  <a id="entry_2_for_letter_V" href="/service-search/other-health-services/visual-impairment-information-and-support">Visual impairment information and support</a>
+                          </li>
+              </ul>
+      </div>
+  </div>
+  <div class="nhsuk-back-to-top">
+      <a id="back_to_top_link_for_letter_V" class="nhsuk-back-to-top__link nhsuk-u-margin-left-0 nhsuk-u-margin-top-0 nhsuk-u-padding-left-0" href="#nhsuk-nav-a-z">
+          Back to top
+      </a>
+  </div>
+  <div class="nhsuk-card nhsuk-card--feature">
+      <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="W">W</h2>
+              <ul class="nhsuk-list nhsuk-list--border">
+                          <li class="fas-card__list">
+                                  <a id="entry_0_for_letter_W" href="/service-search/other-health-services/weight-loss-support-groups">Weight loss support groups</a>
+                          </li>
+              </ul>
+      </div>
+  </div>
+  <div class="nhsuk-back-to-top">
+      <a id="back_to_top_link_for_letter_W" class="nhsuk-back-to-top__link nhsuk-u-margin-left-0 nhsuk-u-margin-top-0 nhsuk-u-padding-left-0" href="#nhsuk-nav-a-z">
+          Back to top
+      </a>
+  </div>
+  <div class="nhsuk-card nhsuk-card--feature">
+      <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="X">X</h2>
+              <div class="nhsuk-list nhsuk-list--border">
+                  <p id="no_entries_for_letter_X" class="fas-card-empty__list">There are currently no services listed</p>
+              </div>
+      </div>
+  </div>
+  <div class="nhsuk-back-to-top">
+      <a id="back_to_top_link_for_letter_X" class="nhsuk-back-to-top__link nhsuk-u-margin-left-0 nhsuk-u-margin-top-0 nhsuk-u-padding-left-0" href="#nhsuk-nav-a-z">
+          Back to top
+      </a>
+  </div>
+  <div class="nhsuk-card nhsuk-card--feature">
+      <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="Y">Y</h2>
+              <ul class="nhsuk-list nhsuk-list--border">
+                          <li class="fas-card__list">
+                                  <a id="entry_0_for_letter_Y" href="/service-search/other-health-services/young-carers-services">Young carers services</a>
+                          </li>
+              </ul>
+      </div>
+  </div>
+  <div class="nhsuk-back-to-top">
+      <a id="back_to_top_link_for_letter_Y" class="nhsuk-back-to-top__link nhsuk-u-margin-left-0 nhsuk-u-margin-top-0 nhsuk-u-padding-left-0" href="#nhsuk-nav-a-z">
+          Back to top
+      </a>
+  </div>
+  <div class="nhsuk-card nhsuk-card--feature">
+      <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="Z">Z</h2>
+              <div class="nhsuk-list nhsuk-list--border">
+                  <p id="no_entries_for_letter_Z" class="fas-card-empty__list">There are currently no services listed</p>
+              </div>
+      </div>
+  </div>
+  <div class="nhsuk-back-to-top">
+      <a id="back_to_top_link_for_letter_Z" class="nhsuk-back-to-top__link nhsuk-u-margin-left-0 nhsuk-u-margin-top-0 nhsuk-u-padding-left-0" href="#nhsuk-nav-a-z">
+          Back to top
+      </a>
+  </div>
+</div>
+</div>
+
+
+  </main>
+</div>
+{% endblock %}
+
+
+
+
+{% block content %}
+<div class="nhsuk-width-container">            
+            
+
+  <main class="nhsuk-main-wrapper nhsuk-main-wrapper--s" id="main-content">
+      
+<div class="nhsuk-back-link nhsuk-app-back-link nhsuk-u-padding-top-5" style="display:none">
+<a class="nhsuk-back-link__link nhsapp-open-in-webview" id="app-backlink" href="javascript:history.back()">
+  <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+      <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+  </svg>
+  Go back
+</a>
+</div>
+
+      <div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-two-thirds">
+<h1>
+  Find a GP
+</h1>
+
+
+<form name="ServiceSearchForm" id="service-search-form" method="post" action="/service-search/find-a-gp">
+  <input type="hidden" value="GPB" data-val="true" data-val-required="The ServiceId field is required." id="ServiceId" name="ServiceId">
+  <input type="hidden" id="UsersLatitude" name="UsersLatitude" value="">
+  <input type="hidden" id="UsersLongitude" name="UsersLongitude" value="">
+  <div class="nhsuk-form-group">
+      <label class="nhsuk-label" for="Location">Enter a postcode in England</label>
+      <input class="nhsuk-input nhsuk-input--width-10" type="text" maxlength="8" value="" id="Location" name="Location">
+  </div>
+  <button class="nhsuk-button nhsuk-u-margin-bottom-4" data-module="nhsuk-button" type="submit">Search</button><br>
+  <button id="use-your-location-button" class="nhsuk-button nhsuk-button--secondary geo-locate--button nhsuk-u-margin-bottom-7" data-module="nhsuk-button">Use your location</button>
+
+      <h2 id="find_out_more_subheading">Find out more about registering with a GP surgery</h2>
+      <ul id="find_out_more_links" class="nhsuk-list additional-links">
+          <li><a href="https://www.nhs.uk/nhs-services/gps/how-to-register-with-a-gp-surgery/">How to register with a GP surgery</a></li>
+          <li><a href="https://www.nhs.uk/nhs-services/gps/registering-with-a-gp-outside-your-area/">Registering with a GP surgery outside the area you live</a></li>
+      </ul>
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8AIxQvLensBCnqDbxv01V5Qdh6hnY3pAGxTj-OGcrS2rTnhlVCAV0mfIOikk9K_JQtEVezp7MrBy-7idvk549SIkEH0CE4Lnu2qhHddWwhdA5_g5d56-9qiOLKi8iiWZC_bU2osrEeS91RwJ2URbo1M"></form>
+</div>
+</div>
+  </main>
+</div>
+    {% endblock %}
+
