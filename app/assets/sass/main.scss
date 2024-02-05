@@ -233,14 +233,62 @@
     fill: #fff
 }
 
-@media (max-width: 40.0525em) {
-    .nhsuk-search__submit .nhsuk-icon__search {
+
+.nhsuk-main-wrapper     .nhsuk-search__submit .nhsuk-icon__search {
         fill:#fff;
         height: 27px;
         width: 27px
     }
+
+
+.nhsuk-main-wrapper .nhsuk-search__input {
+  -ms-flex-positive: 2;
+  -webkit-appearance: listbox;
+  background-color: #ffffff!important;
+  border-bottom: 1px solid #aeb7bd;
+  border-radius: 4px 0 0 4px;
+  border-left: 1px solid #aeb7bd;
+  border-right: 0;
+  border-top: 1px solid #aeb7bd;
+  flex-grow: 2;
+  font-size: inherit;
+  height: 52px;
+  margin: 0;
+  outline: 0;
+  padding: 0 16px;
+  width: 100%;
 }
 
+.nhsuk-main-wrapper .nhsuk-search__submit {
+  color: #fff;
+  background-color: #007f3b;
+  border: 0;
+  border-radius: 0 4px 4px 0;
+  float: right;
+  font-size: inherit;
+  height: 52px;
+  line-height: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 8px 8px 0;
+  width: 52px;
+  position: inherit!important
+}
+
+.nhsuk-main-wrapper .nhsuk-search__submit:hover {
+  background-color: #00662f;
+  cursor: pointer
+}
+
+.nhsuk-main-wrapper .nhsuk-search__submit:focus {
+  background-color: #ffeb3b;
+  border-bottom: 4px solid #212b32;
+  box-shadow: none
+}
+
+.nhsuk-main-wrapper .nhsuk-search__submit:focus .nhsuk-icon {
+  fill: #212b32;
+}
 
 
 //homepage blue button links
