@@ -8499,3 +8499,9 @@ b {
 .govuk-pagination--block .govuk-pagination__link {
   text-align: left;
 }
+
+.govuk-pagination {
+  margin-bottom: 30px;
+  flex-direction: row;
+  align-items: flex-start;
+}

@@ -369,4 +369,11 @@
   text-align: left;
 }
 
+//govuk-pagination new pattern
+.govuk-pagination {
+  margin-bottom: 30px;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
 
