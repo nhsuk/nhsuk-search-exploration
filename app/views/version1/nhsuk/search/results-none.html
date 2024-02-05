@@ -1,12 +1,7 @@
 {% extends 'template-1.html' %}
 
-<!-- some custom c
-  ss for the home page only -->
-{% set containerClasses = 'app-width-container--full' %}
-{% set mainClasses = 'app-main-wrapper--no-padding app-homepage' %}
-
 {% block pageTitle %}
-  Search results for Croydon
+  {{ data['search-field'] }} - Search - NHS.UK
 {% endblock %}
 
 {% block headCSS %}
@@ -93,7 +88,7 @@
           </a>
         </li>
         <li class="nhsuk-header__navigation-item">
-          <a class="nhsuk-header__navigation-link" href="">
+          <a class="nhsuk-header__navigation-link" href="../nhs-services">
             NHS services
             <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
@@ -106,20 +101,25 @@
 </header>
 {% endblock %}
 
+
+
+
+
+<!-- NHS.UK breadcrumbs -->
 {% block beforeContent %}
 <nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
   <div class="nhsuk-width-container">
     <ol class="nhsuk-breadcrumb__list">
       
       <li class="nhsuk-breadcrumb__item">
-          <a href="../nhsuk" class="nhsuk-breadcrumb__link">Home</a>
+          <a href="../../nhsuk" class="nhsuk-breadcrumb__link">Home</a>
         </li>
         
       </ol>
 
       <p class="nhsuk-breadcrumb__back">
         
-          <a href="../nhsuk" class="nhsuk-breadcrumb__backlink">
+          <a href="../../nhsuk" class="nhsuk-breadcrumb__backlink">
             <span class="nhsuk-u-visually-hidden">Back to </span>
             Home
           </a>
@@ -133,75 +133,73 @@
 
 <!-- Search results content -->
 {% block content %}
-
 <div class="nhsuk-width-container">
-  <main class="nhsuk-main-wrapper" id="main-content">
+  <main class="nhsuk-main-wrapper" id="maincontent" lang="en-GB">
       <div class="nhsuk-grid-row">
           <div class="nhsuk-grid-column-full">
               
-<h1>Search results for Croydon</h1>
-<div class="nhsuk-grid-row">
-<div class="nhsuk-grid-column-two-thirds">
-  <form method="get" action="/search/results">
-      <div class="nhsuk-form-group  nhsuk-header__search-form--search-results">
-          <label class="nhsuk-label nhsuk-u-visually-hidden" for="search-field">Enter a search term</label>
-          <input class="nhsuk-input nhsuk-search__input" type="search" name="q" autocomplete="off" id="search-field" value="Croydon">
-          <button class="nhsuk-search__submit" type="submit">
-              <span class="nhsuk-u-visually-hidden">
-                  Submit
-              </span>
-              <svg class="nhsuk-icon nhsuk-icon__search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                  <path d="M19.71 18.29l-4.11-4.1a7 7 0 1 0-1.41 1.41l4.1 4.11a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 10a5 5 0 1 1 5 5 5 5 0 0 1-5-5z"></path>
-              </svg>
-          </button>
-      </div>
-  </form>
-</div>
-</div>
+            <h1>Search results for {{ data['search-field'] }}</h1>
+            <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+              <form method="get" action="/search/results">
+                  <div class="nhsuk-form-group  nhsuk-header__search-form--search-results">
+                      <label class="nhsuk-label nhsuk-u-visually-hidden" for="search-field">Enter a search term</label>
+                      <input class="nhsuk-input nhsuk-search__input" type="search" name="q" autocomplete="off" id="search-field" value="{{ data['search-field'] }}">
+                      <button class="nhsuk-search__submit" type="submit">
+                          <span class="nhsuk-u-visually-hidden">
+                              Submit
+                          </span>
+                          <svg class="nhsuk-icon nhsuk-icon__search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                              <path d="M19.71 18.29l-4.11-4.1a7 7 0 1 0-1.41 1.41l4.1 4.11a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 10a5 5 0 1 1 5 5 5 5 0 0 1-5-5z"></path>
+                          </svg>
+                      </button>
+                  </div>
+              </form>
+            </div>
+            </div>
 
-<div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-row">
 
-      <div class="nhsuk-grid-column-two-thirds">
-          
-<h2 class="nhsuk-heading-l">No results found for Croydon</h2>
+                  <div class="nhsuk-grid-column-two-thirds">
 
-<div class="nhsuk-u-reading-width">
-      
 
-  <div class="nhsuk-action-link">
-    
-    <a class="nhsuk-action-link__link" href="../nhs-services">
-    
-      <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="36" width="36">
-        <path d="M0 0h24v24H0z" fill="none"></path>
-        <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
-      </svg>
-      <span class="nhsuk-action-link__text">Find an NHS service</span>
-    </a>
-  </div>
-  
-      </div>
+                    <h2 class="nhsuk-heading-l">No results found for {{ data['search-field'] }}</h2>
 
-<p>You could try:</p>
-<ul class="nhsuk-list nhsuk-list--bullet">
-<li>checking your spelling</li>
-<li>searching again using other words</li>
-<li>looking for the topic in our <a href="https://www.nhs.uk/conditions/">Health A to Z</a></li>
-</ul>
-<p>If you need medical help now and you're not sure what to do, go to <a href="https://111.nhs.uk/">111.nhs.uk</a> or call 111</p>
+                    <div class="nhsuk-u-reading-width">
+                          
+            
+                      <div class="nhsuk-action-link">
+                        
+                        <a class="nhsuk-action-link__link" href="https://www.nhs.uk/nhs-services/">
+                        
+                          <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="36" width="36">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+                          </svg>
+                          <span class="nhsuk-action-link__text">Find an NHS service</span>
+                        </a>
+                      </div>
+                      
+                          </div>
+            
+                    <p>You could try:</p>
+                    <ul class="nhsuk-list nhsuk-list--bullet">
+                    <li>checking your spelling</li>
+                    <li>searching again using other words</li>
+                    <li>looking for the topic in our <a href="https://www.nhs.uk/conditions/">Health A to Z</a></li>
+                    </ul>
+                    <p>If you need medical help now and you're not sure what to do, go to <a href="https://111.nhs.uk/">111.nhs.uk</a> or call 111</p>
+            
 
-      </div>
+                  </div>
 
-</div>
+            </div>
 
           </div>
       </div>
   </main>
 </div>
-
 {% endblock %}
-
-
 
 
 <!-- JavaScript hack to do nothing if search button or link href="" clicked -->
