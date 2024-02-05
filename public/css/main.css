@@ -8479,3 +8479,23 @@ b {
 .nhsuk-account__login--link:focus .nhsuk-account__login--icon {
   fill: #212b32;
 }
+
+.nhsuk-pagination__page {
+  padding-left: 34px;
+}
+
+.govuk-pagination--block {
+  display: block;
+}
+
+.govuk-pagination--block .govuk-pagination__next .govuk-pagination__icon {
+  margin-left: 0;
+}
+
+.govuk-pagination--block .govuk-pagination__icon {
+  margin-right: 10px;
+}
+
+.govuk-pagination--block .govuk-pagination__link {
+  text-align: left;
+}
