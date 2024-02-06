@@ -8568,7 +8568,3 @@ b {
   padding: 10px 15px;
   float: left;
 }
-
-.govuk-pagination__item--current .govuk-pagination__link:link {
-  color: #fff;
-}
